@@ -1,0 +1,358 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+div {
+  display: block;
+}
+.headerBg {
+  background-color: rgba(255, 81, 0, 0.856);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.left {
+  width: 70%;
+}
+.logo-left {
+  width: 20px;
+  height: 20px;
+}
+.logo-car {
+  height: 40px;
+}
+
+.address {
+  color: white;
+  font-size: 22px;
+}
+
+.header-logo-right {
+  margin-right: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-flag {
+  height: 22px;
+  width: 30px;
+  background-size: cover;
+  padding-right: 10px;
+}
+.logo-picture {
+  position: relative;
+}
+.pics-pizza {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 148px;
+  left: 500px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.local-name {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.rating {
+  color: rgba(255, 81, 0, 0.856);
+}
+
+.deliveryInfo {
+  display: flex;
+}
+.deliveryContent {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.deliveryContent img {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.iconGlass {
+  width: 15px;
+  height: 15px;
+}
+.menu {
+  margin-left: 10px;
+  background-color: rgb(207, 203, 203);
+  font-size: 22px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.pizzaBg {
+  margin-left: 10px;
+  position: relative;
+}
+
+.desertBg {
+  margin-left: 10px;
+}
+
+#shoppingCart {
+  width: 30%;
+
+  position: fixed;
+  right: 0;
+  top: 69.6px;
+  bottom: 0;
+  box-shadow: -2px 1px 17px 5px rgb(199 199 199 / 43%);
+  background-color: white;
+  transition: all 225ms ease-in-out;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+
+.menu-Pizza {
+  font-size: 22px;
+
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  height: 100px;
+}
+
+.dishName {
+  margin-bottom: 35px;
+  margin-top: 8px;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.checkboxDishes {
+  filter: opacity(0.4) drop-shadow(0 0 0 grey);
+}
+
+.pricing {
+  font-size: 18px;
+  margin-left: 8px;
+  color: rgb(251, 97, 0);
+}
+.menu-Pizza img {
+  width: 30px;
+  height: 30px;
+}
+
+.shoppingBg {
+  text-align: center;
+}
+
+.nameBg {
+  text-align: center;
+}
+
+.minusIcon {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  border-radius: 50px;
+  background-color: rgb(243, 231, 231);
+  padding: 3px 3px;
+}
+
+.plusIcon {
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: rgb(243, 231, 231);
+  padding: 3px 3px;
+}
+
+.shoppingBasket {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.optionAddFood {
+  display: flex;
+  justify-content: space-around;
+}
+
+.payBg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between width 100%;
+  margin-top: 5px;
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
+}
+
+.buttonPay {
+  text-align: center;
+  margin-left: 18%;
+  width: 250px;
+  border-radius: 20px;
+  background-color: rgb(251, 97, 0);
+  color: white;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.buttonPay:hover {
+  cursor: pointer;
+}
+
+.textMinPrice {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 5px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: rgba(255, 81, 0, 0.103);
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+#menu {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.d-none {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .iconGlass {
+    padding-right: 5px;
+  }
+
+  .optionAddFood {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .shoppingBasket {
+    justify-content: space-around;
+  }
+
+  .left {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .local-name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .address {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 16px;
+  }
+
+  .payFood {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .payFood {
+    margin: auto;
+    position: sticky;
+    bottom: 0;
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    background-color: rgb(251, 97, 0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shoppingCart {
+    display: none;
+    width: 100% !important;
+    position: fixed;
+  }
+
+  .closeMobilBasket {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .buttonPay {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .closeMobilBasket {
+    display: none;
+  }
+  .shoppingCart {
+    display: block !important;
+  }
+  .payFood {
+    display: none;
+  }
+}

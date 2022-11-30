@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body onload="onload()">
+    <header class="headerBg">
+      <div class="header-logo">
+        <img class="logo-left" src="icons/left.png" />
+        <img class="logo-car" src="icons/LogoIconRest.png" />
+        <span>Liferino.de</span>
+      </div>
+      <div class="address"><p>Partnachplatz, 81369 München</p></div>
+      <div class="header-logo-right">
+        <img class="header-logo-flag" src="icons/germany-152142_640.png" />
+        <img src="icons/menu.png" />
+      </div>
+    </header>
+    <div class="container">
+      <div class="left">
+        <div class="logo-picture">
+          <img class="pics-pizza" src="img/pizza1.jpg" />
+          <img class="logo" src="img/pizza-center (2).png" />
+        </div>
+
+        <div class="local-name">
+          <h2>La cucina Pizza</h2>
+          <p class="rating">★★★★★ (582 Bewertungen)</p>
+          <div class="deliveryInfo">
+            <div class="deliveryContent">
+              <img src="icons/time.png" />
+              <p>45 min</p>
+            </div>
+            <div class="deliveryContent">
+              <img src="icons/bike.png" />
+              <p>5 €</p>
+            </div>
+            <div class="deliveryContent">
+              <img src="icons/cart.png" />
+              <p>Min. 15 €</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img class="iconGlass" src="icons/magnifying-glass-3-24.png" />
+          <a>Pizza</a>
+        </div>
+        <div class="pizzaBg">
+          <div id="menuPizza"></div>
+        </div>
+      </div>
+      <div id="shoppingCart" class="shoppingCart">
+        <button onclick="hideScrollableContainer()" class="closeMobilBasket">
+          X
+        </button>
+        <div class="nameBg">
+          <h2>Warenkorb</h2>
+        </div>
+        <div id="menu"></div>
+        <div id="alertminPrice"></div>
+        <div id="price"></div>
+      </div>
+    </div>
+    <div
+      id="buttonMobilePreise"
+      onclick="showScrollableContainer()"
+      class="payFood"
+    >
+      Warenkorb
+    </div>
+    <footer>
+      <span>Job</span>
+      <span>Datenschutzerklärung</span>
+      <span>Impressum</span>
+    </footer>
+  </body>
+</html>
